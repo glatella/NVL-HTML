@@ -36,7 +36,7 @@ h1{
 .site-name{
   font-size:5em;
 }
-/* Utilizo el nombre que asigne en el id para editar el area del logo de la liga, el nombre de la pagina y el subtitulo */
+/* Utilizo el nombre que asigne en el id para editar el area del logo, el nombre de la pagina y el subtitulo */
 #logo-header{
 	float: left;
 	padding: 15px 0 0 20px;
