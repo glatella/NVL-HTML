@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head><!-- Contenedor de metadata -->
+		<meta charset="utf-8">
+		<title>Lista de peliculas</title>
+	  	<link rel="stylesheet" href="style.css">
+	</head>
+	 
+	<body><!-- Representa el contenido de un documento HTML -->
+	  	<header id="main-header"><!-- Contiene elementos del encabezado, el logo, el nav bar, entre otros -->
+		 	<a id="logo-header" href="#"><!-- Para que sean clickeables, pero por ahora no llevan a ningun sitio -->
+		 	<!-- Agregamos el logo y le asignamos atributos de texto alternativo y ancho --> 
+	      	<img src="Movie-Club.png" alt="Logo oficial de LaLiga" width="150"/>
+				<span class="site-name">Premios Giuli</span><!-- El nombre y titulo de la pagina -->
+				<span class="site-desc">Peliculas / Cine / Opiniones </span><!-- Subtitulo de la pagina -->
+			</a> 
+	 
+			<nav><!-- Barra de navegacion de la pagina ubicada del lado derecho -->
+				<ul><!-- Lista no ordenada -->
+					<!-- Cada uno de los elementos de la lista son a su vez links que permitirán recorrer la pagina -->
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+	  	</header>
+	 	
+	  	<section id="main-content"><!-- Estructurar semánticamente el documento -->
+			<article><!-- Representan artículos relacionados con el exterior -->
+				<header><!-- Contiene elementos del segundo encabezado como el titulo -->
+	        		<h1>Lista de las mejores 5 peliculas que nos veríamos de una sentada </h1>
+	      		</header>
+				
+				<p>La siguiente lista muestra las 5 mejores peliculas en orden de relevancia:</p>
+	   			<!-- Lista ordenada de las peliculas -->
+	   			<ol>
+            		<li><p>The Craft <br><img src="the craft.jpg" height= "200"/></p></li>
+            		<li><p>The Wolf of Wall Street <br><img src="El_Lobo_De_Wall_Street-Cartel.jpg" height= "200"/></p></li>
+				   	<li><p>The Founder <br><img src="el-fundador.jpg" height= "200"/></p></li>
+				   	<li><p>The Great Gatsby <br><img src="El_Gran_Gatsby.jpg" height= "200"/></p></li>
+				   	<li><p>Thir13en Ghosts <br><img src="13 fantasmas.jfif" height= "200"/></p></li>
+				</ol>
+			</article> 
+		</section> 
+	</body>
+</html>
