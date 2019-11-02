@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
+	<head><!-- Contenedor de metadata -->
 		<meta charset="utf-8">
 		<title>Liga de Fútbol Nacional</title>
 	  	<link rel="stylesheet" href="style.css">
 	</head>
 	 
-	<body>
-	  	<header id="main-header">
-		 	<a id="logo-header" href="#">
+	<body><!-- Representa el contenido de un documento HTML -->
+	  	<header id="main-header"><!-- Contiene elementos del encabezado, el logo, el nav bar, entre otros -->
+		 	<a id="logo-header" href="#"><!-- Para que sean clickeables, pero por ahora no llevan a ningun sitio -->
+		 	<!-- Agregamos el logo de La liga Santander y le asignamos atributos de texto alternativo y ancho --> 
 	      	<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaLiga_Santander.svg" alt="Logo oficial de LaLiga" width="80"/>
-				<span class="site-name">El noticiero de Giuli</span>
-				<span class="site-desc">Deportes / Noticias /LaLiga </span>
+				<span class="site-name">El noticiero de Giuli</span><!-- El nombre y titulo de la pagina -->
+				<span class="site-desc">Deportes / Noticias /LaLiga </span><!-- Subtitulo de la pagina -->
 			</a> 
 	 
-			<nav>
-				<ul>
+			<nav><!-- Barra de navegacion de la pagina ubicada del lado derecho -->
+				<ul><!-- Lista no ordenada -->
+					<!-- Cada uno de los elementos de la lista son a su vez links que permitirán recorrer la pagina -->
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Acerca de</a></li>
 					<li><a href="#">Contacto</a></li>
@@ -23,15 +25,16 @@
 			</nav>
 	  	</header>
 	 	
-	  	<section id="main-content">
-			<article>
-				<header>
+	  	<section id="main-content"><!-- Estructurar semánticamente el documento -->
+			<article><!-- Representan artículos relacionados con el exterior -->
+				<header><!-- Contiene elementos del segundo encabezado, el titulo y el subtitulo de mi articulo -->
 	        		<h1>Clasificación de los equipos </h1>
+	        		<!-- Utilice span para aplicar estilo al texto de manera embebida -->
 					<h2>Liga de <span style="color: yellow;">Fútbol nacional</span> 2019-2020</h2>
 				</header>
 				
 				<p>La siguiente lista muestra la posición de la clasificación de los equipos dentro de la liga Santander para el período 2019-2020:</p>
-	   	
+	   			<!-- Lista ordenada de los equipos de la liga segun su posicion -->
 	   			<ol>
 			   		<li>Barcelona</li>
 				   	<li>Real Madrid</li>
@@ -55,6 +58,7 @@
 				   	<li>Leganés</li>
 				</ol>
 			    <h3>IMPORTANTE!!!</h3>
+			    <!-- Lista no ordenada de informacion importante sobre el destino del equipo segun su posicion -->
 			   	<ul>
 			 	  	<li>Los primeros 4 entran en la Champions League.</li>
 			 	  	<li>Del 5 al 7 jugarán la Europa League.</li>
