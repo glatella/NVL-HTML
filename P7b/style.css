@@ -1,3 +1,6 @@
+/* Para darle estilo al cuerpo del documento, se establece un margen alrededor de la pagina, una fuente sans serif color negro, */
+/* un background de tono blanco grisaceo, un tamaño de letra de 1em (unidad relativa al tamaño de la letra. Equivale a 12 puntos) */
+/* y por ultimo el tamaño del interlineado */
 body {
 	margin: 10;
 	font-family: Helvetica, Arial, sans-serif; 
@@ -27,7 +30,9 @@ h1{
 #indice a{
 	color: white;
 }
-
+/* Para darle estilo a los botones, se establece un color de fondo, se quita el borde, se modifica el color y tamaño de letra, */
+/* se añade un padding, se centra el texto dentro del boton, se quita el subrayado, se establece un margen, el tipo de cursor */
+/*que se vera sobre el boton, se modifica el tipo de cuadro de representación y por ultimo se centra el boton */
 button{
 	background-color: #4CAF50;
   	border: none;
@@ -41,7 +46,7 @@ button{
   	display: block;
   	margin: 0 auto;
 }
-
+/* Se modifica el color de la letra del boton y se suprime el subrayado */
 button a{
 	color: white;
 	text-decoration: none;
