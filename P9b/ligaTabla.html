@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head><!-- Contenedor de metadata -->
+		<meta charset="utf-8">
+		<title>Liga de Fútbol Nacional</title>
+	  	<link rel="stylesheet" href="style.css">
+	</head>
+	 
+	<body><!-- Representa el contenido de un documento HTML -->
+	  	<header id="main-header"><!-- Contiene elementos del encabezado, el logo, el nav bar, entre otros -->
+		 	<a id="logo-header" href="#"><!-- Para que sean clickeables, pero por ahora no llevan a ningun sitio -->
+		 	<!-- Agregamos el logo de La liga Santander y le asignamos atributos de texto alternativo y ancho --> 
+	      	<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaLiga_Santander.svg" alt="Logo oficial de LaLiga" width="80"/>
+				<span class="site-name">El noticiero de Giuli</span><!-- El nombre y titulo de la pagina -->
+				<span class="site-desc">Deportes / Noticias /LaLiga </span><!-- Subtitulo de la pagina -->
+			</a> 
+	 
+			<nav><!-- Barra de navegacion de la pagina ubicada del lado derecho -->
+				<ul><!-- Lista no ordenada -->
+					<!-- Cada uno de los elementos de la lista son a su vez links que permitirán recorrer la pagina -->
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+	  	</header>
+	 	
+	  	<section id="main-content"><!-- Estructurar semánticamente el documento -->
+			<article><!-- Representan artículos relacionados con el exterior -->
+				<header><!-- Contiene elementos del segundo encabezado, el titulo y el subtitulo de mi articulo -->
+	        		<h1>Clasificación de los equipos </h1>
+	        		<!-- Utilice span para aplicar estilo al texto de manera embebida -->
+					<h2>Liga de <span style="color: yellow;">Fútbol nacional</span> 2019-2020</h2>
+				</header>
+				<!-- Aqui comienza la tabla con combinacion de cabeceras superiores y laterales. Tabla con contenidos centrados y título al pie.-->
+				<table>
+					<!--Las filas son representadas por la etiqueta TR (table row) y las celdas dentro de la fila por TD. -->
+					<!-- Esta es la leyenda de la tabla que coloque en la parte inferior-->
+					<caption align="bottom">Tabla de clasificación</caption>  
+					<tr>
+					<!-- Cabeceras superiores -->
+					<td><th>PUESTO</th><th>P.TOTALES</th><th>P.GANADOS</th><th>P.PERDIDOS</th><th>P.EMPATADOS</th><th>GOLES A FAVOR</th><th>GOLES EN CONTRA</th></td>
+					</tr>
+					 
+					<tr align=center><!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>BARCELONA</th><td>1</td><td>22</td><td>7</td><td>3</td><td>1</td><td>29</td><td>14</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>REAL MADRID</th><td>2</td><td>22</td><td>6</td><td>1</td><td>4</td><td>21</td><td>9</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->     
+					<th>REAL SOCIEDAD</th><td>3</td><td>22</td><td>7</td><td>4</td><td>1</td><td>20</td><td>13</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>ATLETICO MADRID</th><td>4</td><td>21</td><td>5</td><td>1</td><td>6</td><td>12</td><td>7</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>SEVILLA</th><td>5</td><td>21</td><td>6</td><td>3</td><td>3</td><td>15</td><td>13</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>GRANADA</th><td>6</td><td>20</td><td>6</td><td>4</td><td>2</td><td>19</td><td>15</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>GETAFE</th><td>7</td><td>19</td><td>5</td><td>3</td><td>4</td><td>18</td><td>15</td>
+					</tr>
+
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>VILLARREAL</th><td>8</td><td>18</td><td>5</td><td>4</td><td>3</td><td>25</td><td>16</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>OSASUNA</th><td>9</td><td>18</td><td>4</td><td>2</td><td>6</td><td>16</td><td>13</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>ATH. BILBAO</th><td>10</td><td>17</td><td>4</td><td>3</td><td>5</td><td>11</td><td>7</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>LEVANTE</th><td>11</td><td>17</td><td>5</td><td>5</td><td>2</td><td>15</td><td>14</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->   
+					<th>VALLADOLID</th><td>12</td><td>17</td><td>4</td><td>3</td><td>5</td><td>14</td><td>14</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>VALENCIA</th><td>13</td><td>17</td><td>4</td><td>3</td><td>5</td><td>17</td><td>18</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>EIBAR</th><td>14</td><td>15</td><td>4</td><td>5</td><td>3</td><td>14</td><td>17</td>
+					</tr>
+
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>BETIS</th><td>15</td><td>13</td><td>3</td><td>5</td><td>4</td><td>14</td><td>21</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>ALAVÉS</th><td>16</td><td>12</td><td>3</td><td>6</td><td>3</td><td>11</td><td>18</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>R.C.D. MALLORCA</th><td>17</td><td>11</td><td>3</td><td>7</td><td>2</td><td>9</td><td>18</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>CELTA DE VIGO</th><td>18</td><td>9</td><td>2</td><td>7</td><td>3</td><td>6</td><td>15</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>RCD ESPANYOL</th><td>19</td><td>8</td><td>2</td><td>8</td><td>2</td><td>6</td><td>20</td>
+					</tr>
+					 
+					<tr align=center> <!-- Tipo de alineacion: centrada -->
+					<!-- El formato es: <th>EQUIPO</th><td>PUESTO</td><td>PUNTOS TOTALES</td><td>PARTIDOS GANADOS</td><td>PARTIDOS PERDIDOS</td><td>PARTIDOS EMPATADOS</td><td>GOLES A FAVOR</td><td>GOLES EN CONTRA</td></tr> -->    
+					<th>LEGANÉS</th><td>20</td><td>5</td><td>1</td><td>9</td><td>2</td><td>6</td><td>21</td>
+					</tr>
+				</table>
+			</article> 
+		</section> 
+	</body>
+</html>
+
+
+		

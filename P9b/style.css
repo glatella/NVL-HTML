@@ -1,0 +1,101 @@
+/* Para darle estilo al cuerpo del documento, se establece un margen alrededor de la pagina, una fuente sans serif color negro, */
+/* un background de tono blanco grisaceo, un tamaño de letra de 1em (unidad relativa al tamaño de la letra. Equivale a 12 puntos) */
+/* y por ultimo el tamaño del interlineado */
+body {
+	margin: 2;
+	font-family: Helvetica, Arial, sans-serif; 
+	color: #000;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+/* Para darle estilo a los encabezados h1, se establece un tamaño de letra, un interlineado, un margen, se alinea al centro y se  */
+/* establece un valor para el grosor de la letra */
+h1{
+  	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+/* La unica diferencia entre el encabezado h1 y el h2, es que a este ultimo se le asigna primeramente un color de letra rojo */
+h2{
+  	color: red;
+  	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+/* Para darle estilo a la tabla y a las celdas, le colocamos borde */
+table, th, td {
+  border: 1px solid black;
+}
+/* Utilizo el nombre que asigne en el id del encabezado principal para darle estilo: fondo negro, letras blancas y el grosor */
+#main-header{
+	background: #000;
+	color: white;
+	height: 130px;
+}
+/* Utilizo el nombre que asigne en el id para cambiar el color a los hipervinculos que originalmente son azules */	
+#main-header a{
+	color: white;
+}
+ 
+/*
+ * Logo
+ */
+ /* El tamaño de la letra del nombre del sitio */
+.site-name{
+  font-size:2em;
+}
+/* Utilizo el nombre que asigne en el id para editar el area del logo de la liga, el nombre de la pagina y el subtitulo */
+#logo-header{
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+/* Utilizo el nombre que asigne en el id para editar el color rojo al hoover de los hipervinculos */
+#logo-header .site-name:hover{
+	color: red;
+}
+/* Utilizo el nombre que asigne en el id para editar en el area de la descripcion de la pagina o el subtitulo su tipo de  */
+/*  cuadro de representación, el tamaño, color y grosor de la letra	*/
+#logo-header .site-desc{
+	display: block;
+	font-weight: 500;
+	font-size: 2em;
+	color: #999;
+}
+	
+/*
+ * Navegación
+ */
+/* Ubicacion del navegador */
+nav{
+	float: right;
+}
+	/* Para la lista se eliminan las viñetas y se separa del borde derecho agregandole un padding */
+	nav ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+		/* Para todos los elementos de la lista se elimina el estilo y se colocan horizontalmente */
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+		}
+			/* Para cada hipervinculo que se encuentre dentro de los elementos de la lista, se modifica el tipo de  */
+			/*  cuadro de representación y se agrega un padding para la separacion */
+			nav ul li a{
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			  	/* Para cada hoover de cada hipervinculo que se encuentre dentro de los elementos de la lista, se modifica */
+				/*  el color */
+			  	nav ul li a:hover{
+					background: red;
+				}
