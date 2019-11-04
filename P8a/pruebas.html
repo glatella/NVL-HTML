@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head><!-- Contenedor de metadata -->
+		<link rel="stylesheet" href="style.css"><!-- Enlace a la hoja de estilo -->
+	</head>
+	<body>
+		<header><!-- Contiene elementos del encabezado como el titulo y la nota -->
+		    <h1> Tipos de elemento según su representación </h1>
+		    <br>
+		    <h2>NOTA:</h2>
+		    <p> Para realizar los experimentos de anidamento, permuté los elementos de las lecciones obteniendo las siguientes combinaciones. 
+			Ademas de analizar los elementos por separado y tambien seguidos por otro de su mismo tipo. </p>
+			Finalmente, los casos a estudiar son:
+			<ul><!-- Contiene elementos del encabezado como el titulo y la nota -->
+						<li>BLOCK</li>
+						<li>BLOCK seguido de otro BLOCK</li>
+						<li>INLINE</li>
+						<li>INLINE seguido de otro INLINE</li>
+						<li>INLINE DENTRO DE BLOCK  // BLOCK(INLINE)</li>
+						<li>BLOCK DENTRO DE INLINE  // INLINE(BLOCK)</li>
+						<li>INLINE DENTRO DE INLINE // INLINE(INLINE)</li>
+						<li>BLOCK DENTRO DE BLOCK   // BLOCK(BLOCK)</li>
+						<li>CASO CURIOSO: BLOCK DENTRO DE BLOCK</li>
+					</ul>
+		</header>
+
+		<!-- BLOCK -->
+		<h1>BLOCK</h1>
+		<!-- Utilicé el tag <div>, que es un elemento BLOCK colocándole con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<div style="border: 1px solid black; background-color:yellow" background-color: yellow>Hello World</div>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>&lt;div&gt; es un elemento de tipo BLOCK.</li>
+			<li>De forma predeterminada, los elementos de BLOCK comienzan en una nueva línea. (Fuerzan un salto de línea)</li>
+			<li>Toman todo el ancho disponible (Se extienden de izquierda a derecha tanto como sea posible)</li>
+			<li>Respetan el width, height, margin-top y margin-bottom indicados por el usuario.</li>
+			<li>Una forma de ver si un elemento es BLOCK: escribir varios seguidos y comprobar si se fuerza el salto de línea.<br>
+			Si los elementos quedan uno al lado del otro entonces pueden ser de tipo INLINE o INLINE-BLOCK.</li>
+		</ul>
+
+
+		<!-- BLOCK seguido de otro BLOCK -->
+		<h1>BLOCK seguido de otro BLOCK</h1>
+		<!-- Utilicé el tag <div>, que es un elemento BLOCK e introduje dos elementos <span> de tipo INLINE. A cada uno de ellos les asigné un atributo class para luego en el .css poder asignarle el tipo de representacion y los atributos de borde, color de fondo, etc., para que se aprecie mejor el espacio que ocupa -->
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+		<!-- INLINE -->
+		<h1>INLINE</h1>
+		<!-- Utilicé el tag <span>, que es un elemento INLINE colocándole con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<span style="border: 1px solid black; background-color:yellow">Hello World</span>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>&lt;span&gt; es un elemento de tipo INLINE.</li>
+			<li>Los elementos INLINE pueden comenzar en cualquier parte de una línea.</li>
+			<li>No fuerzan un salto de línea.</li>
+			<li>No tienen margin-top ni margin-bottom, pero si tienen margin-left y margin-right.</li>
+			<li>No respetan width ni height. Estas medidas dependerán del tamaño en píxels de su contenido.</li>
+			<li>Una forma de ver si un elemento es INLINE:es darle ancho. Si asignas width:100% y la caja no<br>
+			ocupa todo el ancho disponible, se trata de un elemento INLINE.</li>
+		</ul>
+
+
+		<!-- INLINE seguido de otro INLINE -->
+		<h1>INLINE seguido de otro INLINE</h1>
+		<!-- Utilicé el tag <div>, que es un elemento BLOCK e introduje dos elementos <span> de tipo INLINE. A cada uno de ellos les asigné un atributo class para luego en el .css poder asignarle el tipo de representacion y los atributos de borde, color de fondo, etc., para que se aprecie mejor el espacio que ocupa -->
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. 
+		<span class="a">Aliquam</span><span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+		<!-- INLINE DENTRO DE BLOCK -->
+		<h1>INLINE DENTRO DE BLOCK</h1>
+		<!-- Utilicé el tag <p>, que es un elemento BLOCK e introduje un elemento <span> de tipo INLINE, colocándole con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<p>Este es un elemento &lt;span&gt; (INLINE) <span style="border: 1px solid black; background-color:yellow">Hello World</span> dentro de un
+		elemento &lt;p&gt; (BLOCK).</p>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>Los elementos BLOCK pueden contener elementos INLINE y otros elementos BLOCK. La idea de que los elementos en BLOCK<br>
+			crean estructuras "más grandes" que los elementos INLINE.</li>
+		</ul>
+
+
+		<!-- BLOCK DENTRO DE INLINE -->
+		<h1>BLOCK DENTRO DE INLINE</h1>
+		<!-- Utilicé el tag <span>, que es un elemento INLINE e introduje un elemento <p> de tipo BLOCK. A cada uno de ellos les asigné con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<p>Este es un elemento &lt;p&gt; (BLOCK) <span style="border: 1px solid black; background-color:yellow"><p style="border: 1px solid black; background-color:yellow">
+		Hello World</p></span> dentro de un elemento &lt;span&gt; (INLINE).</p>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>En general, los elementos INLINE pueden contener únicamente datos y otros elementos INLINE.</li>
+		</ul>
+
+
+		<!-- INLINE DENTRO DE INLINE -->
+		<h1>INLINE DENTRO DE INLINE</h1>
+		<!-- Utilicé el tag <span>, que es un elemento INLINE y otro elemento <span> de tipo INLINE. A uno de ellos le asigné con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<span>Este es un elemento &lt;span&gt; (INLINE) <span style="border: 1px solid black; background-color:yellow">Hello World</span> dentro de otro
+		elemento &lt;span&gt; (INLINE).</span>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>En general, los elementos INLINE pueden contener únicamente datos y otros elementos INLINE.</li>
+		</ul>
+
+
+		<!-- BLOCK DENTRO DE BLOCK -->
+		<h1>BLOCK DENTRO DE BLOCK</h1>
+		<!-- Utilicé el tag <p>, que es un elemento BLOCK y otro elemento <table> de tipo BLOCK. A uno de ellos le asigné con el atributo style color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<p style="background-color:yellow">Este es un elemento &lt;table&gt; (BLOCK)
+		<table> 
+		  <tr>
+		    <th>Firstname</th>
+		    <th>Lastname</th> 
+		    <th>Age</th>
+		  </tr>
+		  <tr>
+		    <td>Jill</td>
+		    <td>Smith</td>
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		    <td>John</td>
+		    <td>Doe</td>
+		    <td>80</td>
+		  </tr>
+		</table>dentro de un elemento &lt;p&gt; (BLOCK).</p>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>Los elementos BLOCK pueden contener elementos INLINE y otros elementos BLOCK. La idea de que los elementos en BLOCK<br>
+			crean estructuras "más grandes" que los elementos INLINE.</li>
+			<li>Se observa que el estilo deja de aplicarse a la ultima linea del parrafo y se presume que es porque en medio hay otro elemento de tipo BLOCK</li>
+		</ul>
+
+
+		<!-- CASO CURIOSO: BLOCK DENTRO DE BLOCK -->
+		<h1>CASO CURIOSO: BLOCK DENTRO DE BLOCK</h1>
+		<!-- Utilicé el tag <p>, que es un elemento BLOCK y otro elemento <p> de tipo BLOCK. A cada uno de ellos les asigné con el atributo style borde y color de fondo para que se aprecie mejor el espacio que ocupa -->
+		<p>Este es un elemento &lt;p&gt; (BLOCK) <p style="border: 1px solid black; background-color:yellow"><p style="border: 1px solid black; background-color:yellow">
+		Hello World</p></p> dentro de un elemento &lt;p&gt; (BLOCK).</p>
+		<!-- Lista no ordenada que contiene las características -->
+		<ul>
+			<li>Los elementos BLOCK pueden contener elementos INLINE y otros elementos BLOCK. La idea de que los elementos en BLOCK<br>
+			crean estructuras "más grandes" que los elementos INLINE.</li>
+			<li>Se observa que el estilo deja de aplicarse a la ultima linea del parrafo y se presume que es porque en medio hay otro elemento de tipo BLOCK</li>
+			<li>Como cada cuadro ocupa el total del ancho de la pantalla, se colocan uno debajo del otro, recordemos que eso hacen los elementos de tipo BLOCK. Pero, como el de arriba no contiene nada, se ve plano.</li>
+		</ul>
+
+
+		<p><h1>CONCLUSIONES FINALES:</h1> Es sumamente importante saber diferenciar estos 2 tipos de elementos ya que de ello desprende un código limpio y bien estructurado; sin contar que sabiendo esto nos podemos evitar horas de debugging sobre "errores fantasma de alineación".
+			<!-- Lista no ordenada que contiene las conclusiones -->
+			<ul>
+				<li>El tipo de elemento definirá como se va a comportar un elemento con respecto a los que lo rodean.</li>
+				<li>Los elementos BLOCK se van colocando verticalmente forzando un salto de linea al final de cada uno.</li>
+				<li>Los elementos BLOCK respetan el width, el height y los margenes verticalesque se les asigna.</li>
+				<li>Las anchura es la máxima que puede tomar dentro de su elemento contenedor.</li>
+				<li>Puede contener otros elementos de tipo inline y block.</li>
+				<li>Los elementos INLINE se van apilando en horizontal sin hacer saltos de linea.</li>
+				<li>Los elementos INLINE hacen caso omiso del width y height que les indicamos. Estos se definen en base al contenido que posea.</li>
+				<li>Los elementos INLINE no se ven afectados por el flujo de otros elementos, limitándose solamente a su uso natural. Por el contrario los elementos BLOCK no se mezclan con el resto de los elementos, mostrándose en líneas independientes.</li>
+				<li>Solo puede contener elementos de tipo inline.</li>
+				<li>Los elementos BLOCK modifican el comportamiento de los otros elementos que le rodean.</li>
+			</ul>
+		</p>
+
+		</head>
+	</body>
+</html>
+

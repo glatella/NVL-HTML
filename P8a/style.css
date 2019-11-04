@@ -1,0 +1,39 @@
+/* Para darle estilo al cuerpo del documento, se establece un margen alrededor de la pagina*/
+body{
+  margin: 20px;
+}
+/* Para darle estilo a los encabezados h1, se alinea al centro */
+h1{
+  text-align: center;
+}
+/* Para darle estilo a la tabla, le colocamos borde */
+table, th, td {
+  border: 1px solid black;
+}
+/* Para darle estilo y asignar el tipo de representación unicamente al <span> que quiero modificar*/
+span.a {
+  display: inline; /* valor por default para span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+/* Para darle estilo y asignar el tipo de representación unicamente al <span> que quiero modificar*/
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+/* Para darle estilo y asignar el tipo de representación unicamente al <span> que quiero modificar*/
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
