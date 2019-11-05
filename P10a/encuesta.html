@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head><!-- Contenedor de metadata -->
+    <meta charset="utf-8">
+    <title>Encuesta</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+   
+  <body><!-- Representa el contenido de un documento HTML -->
+    <header id="main-header"><!-- Contiene elementos del encabezado, el logo, el nav bar, entre otros -->
+      <a id="logo-header" href="#"><!-- Para que sean clickeables, pero por ahora no llevan a ningun sitio -->
+      <!-- Agregamos el logo de La liga Santander y le asignamos atributos de texto alternativo y ancho --> 
+          <img src="http://albertoggago.es/wp-content/uploads/2015/02/se%C3%B1or-ventana-incognito.png" alt="Logo oficial de LaLiga" width="80"/>
+        <span class="site-name">PreguntaDos</span><!-- El nombre y titulo de la pagina -->
+        <span class="site-desc">Encuestas / Opiniones / Evaluación de productos </span><!-- Subtitulo de la pagina -->
+      </a> 
+   
+      <nav><!-- Barra de navegacion de la pagina ubicada del lado derecho -->
+        <ul><!-- Lista no ordenada -->
+          <!-- Cada uno de los elementos de la lista son a su vez links que permitirán recorrer la pagina -->
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="main-content"><!-- Estructurar semánticamente el documento -->
+      <article><!-- Representan artículos relacionados con el exterior -->
+        <header><!-- Contiene elementos del segundo encabezado, el titulo y el subtitulo de mi articulo -->
+          <h1>Formulario de Opinión </h1>
+          <!-- Utilice span para aplicar estilo al texto de manera embebida -->
+          <p>Estimado Señor o Señora, <br>Gracias por su visita. Rellenar esta encuesta le llevará menos de 5 minutos y nos ayudará a proveer los mejores productos.</p>
+        </header>
+        <center><!-- Para centrar el formulario -->
+        <form method="post" action="miservidor.php"><!-- Indica el método del protocolo HTTP en el que van a ser enviados los datos -->
+              <label for="email">Email</label> <!-- Etiqueta que identifica la responsabilidad del campo -->
+              <input id="email" type="email"><!-- Se define el tipo de dato que se podra introducir en el campo -->
+          </div>
+          <div>
+            <label for="codPostal">Código Postal:</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+              <input id="codPostal" type="number"><!-- Se define el tipo de dato que se podra introducir en el campo -->
+          </div>
+          <div>
+            <label for="satif">Nivel de satisfacción  (1 el mas bajo y 5 el mas alto)</label><!-- Etiqueta que identifica la responsabilidad del campo -->       
+              <select id=”satif”><!-- Representa un control que muestra un menú de opciones en forma de dropdown -->
+                <option value=”1”>1</option><!-- Opciones del dropdown, tal como se indica en el enunciado del ejercicio -->
+                <option value=”2”>2</option>
+                <option value=”3”>3</option>
+                <option value=”4”>4</option>
+                <option value=”5”>5</option>
+              </select>
+          </div>
+          <div>
+             <label for=”comentPos”>Aspectos positivos:</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+             <textarea id=”comentPos”></textarea><!-- Representa un control para edición muti-línea de texto plano libre -->
+          </div>
+          <div>
+            <label for=”comentNeg”>Aspectos negativos:</label>><!-- Etiqueta que identifica la responsabilidad del campo -->
+            <textarea id=”comentNeg”></textarea><!-- Representa un control para edición muti-línea de texto plano libre -->
+          </div>
+          <br>
+          <div>
+            <!-- Primera forma en que el usuario puede elegir entre las siguientes opciones: excelente, bueno, regular, pésimo -->
+            <label for=”p1”>¿Cómo fue tu primera reacción al probar el producto?</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+            <select id=”p1”><!-- Representa un control que muestra un menú de opciones en forma de dropdown -->
+              <option value=”E”>Excelente</option>
+              <option value=”B”>Bueno</option>
+              <option value=”R”>Regular</option>
+              <option value=”P”>Pésimo</option>
+            </select>
+          </div>
+          <div>
+            <label for=”p2”>¿Cómo calificarías la calidad de nuestro producto?</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+            <select id=”p2”><!-- Representa un control que muestra un menú de opciones en forma de dropdown -->
+              <option value=”E”>Excelente</option><!-- Opciones del dropdown, tal como se indica en el enunciado del ejercicio -->
+              <option value=”B”>Bueno</option>
+              <option value=”R”>Regular</option>
+              <option value=”P”>Pésimo</option>
+            </select>
+          </div>
+          <div>
+            <label for=”p3”>¿Cómo calificarías la relación precio-valor del producto?</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+            <select id=”p3”><!-- Representa un control que muestra un menú de opciones en forma de dropdown -->
+              <option value=”E”>Excelente</option><!-- Opciones del dropdown, tal como se indica en el enunciado del ejercicio -->
+              <option value=”B”>Bueno</option>
+              <option value=”R”>Regular</option>
+              <option value=”P”>Pésimo</option>
+            </select>
+          </div>
+
+          <!-- Segunda forma en que el usuario puede elegir entre las siguientes opciones: excelente, bueno, regular, pésimo -->
+          <p>En comparación con otros productos semejantes, la calidad de nuestro producto es:   </p>
+          <div>
+            <!--Para la segunda opcion use colecciones de botones de radio. Solo permiten seleccionar un botón de radio en un grupo dado al mismo tiempo. Los botones de radio generalmente se representan como círculos pequeños, que se rellenan o resaltan cuando se seleccionan. -->
+            <input type="radio" id="p4" name="contact" value="E"><!-- Se define el tipo de dato que se podra introducir en el campo -->
+            <label for="p4">Excelente</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+
+            <input type="radio" id="p5" name="contact" value="B">
+            <label for="p5">Bueno</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+
+            <input type="radio" id="p6" name="contact" value="R">
+            <label for="p6">Regular</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+
+            <input type="radio" id="p7" name="contact" value="P">
+            <label for="p7">Pésimo</label><!-- Etiqueta que identifica la responsabilidad del campo -->
+          </div>
+
+          <input type="submit" value="Enviar"><!-- Boton para envio del formulario -->
+        </form>
+        </center>
+      </article> 
+    </section> 
+  </body>
+</html>
